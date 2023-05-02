@@ -17,7 +17,7 @@ class Sphere:
         self.color = color
 
     def draw(self):
-        Draw_circle= plt.Circle((self.x, self.y ),self.radius , color=self.color)
+        Draw_circle= plt.Circle((self.x, self.y),self.radius , color=self.color)
         axes.add_artist(Draw_circle)
 
 
@@ -30,7 +30,7 @@ class Light:
 
 def img_render():
     picture = np.full(size, (0,0,0))
-    main_light = Light(500,500, 0)
+    main_light = Light(500, 500, 0)
     for i in range(15):
         color = (random.randint(0,256), random.randint(0,256), random.randint(0,256))
         sphere = Sphere(random.randint(0,size_int), random.randint(0,size_int), color, random.randint(0,200))
