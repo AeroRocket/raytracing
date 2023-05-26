@@ -1,10 +1,5 @@
-#!/opt/homebrew/bin/python3.9
 import matplotlib.pyplot as plt
-import numpy as np
 from PIL import Image
-from math import pi
-import random
-import math
 
 from light import Light
 from sphere import Sphere
